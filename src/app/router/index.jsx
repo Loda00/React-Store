@@ -23,8 +23,12 @@ class Nav extends Component {
 
         return (
             <BrowserRouter>
-                <Menu className="test" vertical>
-                    <Image src="https://previews.123rf.com/images/saiful007/saiful0071708/saiful007170801396/84740605-modelo-de-concepto-de-dise%C3%B1o-de-logotipo-de-ropa-de-mujer.jpg" size='small' wrapped />
+                <Menu vertical>
+                    <NavLink
+                        to="/"
+                    >
+                        <Image src="https://previews.123rf.com/images/saiful007/saiful0071708/saiful007170801396/84740605-modelo-de-concepto-de-dise%C3%B1o-de-logotipo-de-ropa-de-mujer.jpg" size='small' wrapped />
+                    </NavLink>
                     <Menu.Item>
                         <Menu.Header className="nav-item">Products</Menu.Header>
                         <Menu.Menu>
@@ -110,7 +114,7 @@ class Nav extends Component {
                     </Menu.Item>
                 </Menu>
                 <Switch>
-                    <Route exact path="/hours" component={Hours} />
+                    <Route path="/hours" component={Hours} />
                     <Route exact path="/" component={Index} />
                     <Route component={NotFound} />
                 </Switch>

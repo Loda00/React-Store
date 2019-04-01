@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react'
 
+import Header from '../header/app'
+
 
 const NotFound = () => {
     return (
         <div className="main-content">
-            <div className="content">
+        <Header />
+            <div>
                 <h1>
                     Not Found
                 </h1>

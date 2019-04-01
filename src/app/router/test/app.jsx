@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../header/app'
 
 class Clock extends React.Component {
 
@@ -35,6 +36,7 @@ class Clock extends React.Component {
     render() {
         return (
             <div className="main-content">
+            <Header />
                 <div className="content">
                     <h3>Hora actual</h3>
                     <p>{this.state.date.toLocaleTimeString()}</p>
