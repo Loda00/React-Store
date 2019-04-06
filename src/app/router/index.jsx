@@ -8,119 +8,119 @@ import { Menu, Image } from 'semantic-ui-react'
 
 class Nav extends Component {
 
-    state = {
-        store: 'Store'
-    }
+  state = {
+    store: 'Store'
+  }
 
-    handleItemClick = (name) => {
-        console.log('click', name)
-        this.setState({ activeItem: name })
-    }
+  handleItemClick = (name) => {
+    console.log('click', name)
+    this.setState({ activeItem: name })
+  }
 
-    render() {
+  render() {
 
-        const { store } = this.state
+    const { store } = this.state
 
-        return (
-            <BrowserRouter>
-                <Menu vertical>
-                    <NavLink
-                        to="/"
-                    >
-                        <Image src="https://previews.123rf.com/images/saiful007/saiful0071708/saiful007170801396/84740605-modelo-de-concepto-de-dise%C3%B1o-de-logotipo-de-ropa-de-mujer.jpg" size='small' wrapped />
-                    </NavLink>
-                    <Menu.Item>
-                        <Menu.Header className="nav-item">Products</Menu.Header>
-                        <Menu.Menu>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                {store}
-                            </NavLink>
-                        </Menu.Menu>
-                    </Menu.Item>
+    return (
+      <BrowserRouter>
+        <Menu vertical>
+          <NavLink
+            to="/"
+          >
+            <Image src="https://previews.123rf.com/images/saiful007/saiful0071708/saiful007170801396/84740605-modelo-de-concepto-de-dise%C3%B1o-de-logotipo-de-ropa-de-mujer.jpg" size='small' wrapped />
+          </NavLink>
+          <Menu.Item>
+            <Menu.Header className="nav-item">Products</Menu.Header>
+            <Menu.Menu>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                {store}
+              </NavLink>
+            </Menu.Menu>
+          </Menu.Item>
 
-                    <Menu.Item>
-                        <Menu.Header className="nav-item">CMS Solutions</Menu.Header>
-                        <Menu.Menu>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                        </Menu.Menu>
-                    </Menu.Item>
+          <Menu.Item>
+            <Menu.Header className="nav-item">CMS Solutions</Menu.Header>
+            <Menu.Menu>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+                </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+                </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+                </NavLink>
+            </Menu.Menu>
+          </Menu.Item>
 
-                    <Menu.Item>
-                        <Menu.Header className="nav-item">Hosting</Menu.Header>
-                        <Menu.Menu>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                        </Menu.Menu>
-                    </Menu.Item>
+          <Menu.Item>
+            <Menu.Header className="nav-item">Hosting</Menu.Header>
+            <Menu.Menu>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+            </Menu.Menu>
+          </Menu.Item>
 
-                    <Menu.Item>
-                        <Menu.Header className="nav-item">Support</Menu.Header>
-                        <Menu.Menu>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                            <NavLink
-                                to="/hours"
-                                className="item nav-item"
-                            >
-                                Hours
-                            </NavLink>
-                        </Menu.Menu>
-                    </Menu.Item>
-                </Menu>
-                <Switch>
-                    <Route path="/hours" component={Hours} />
-                    <Route exact path="/" component={Index} />
-                    <Route component={NotFound} />
-                </Switch>
-            </BrowserRouter>
-        )
-    }
+          <Menu.Item>
+            <Menu.Header className="nav-item">Support</Menu.Header>
+            <Menu.Menu>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+              <NavLink
+                to="/hours"
+                className="item nav-item"
+              >
+                Hours
+              </NavLink>
+            </Menu.Menu>
+          </Menu.Item>
+        </Menu>
+        <Switch>
+          <Route path="/hours" component={Hours} />
+          <Route exact path="/" component={Index} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 
 }
 
